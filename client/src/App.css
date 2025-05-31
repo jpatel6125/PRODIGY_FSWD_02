@@ -1,0 +1,36 @@
+/* Reset the original styling to prevent conflicts */
+#root {
+  @apply max-w-full m-0 p-0 text-left;
+}
+
+/* Toast notification styling */
+.Toastify__toast {
+  border-radius: 6px;
+}
+
+.Toastify__toast-body {
+  font-family: 'Inter', sans-serif;
+}
+
+.Toastify__toast--success {
+  background-color: var(--success);
+}
+
+.Toastify__toast--error {
+  background-color: var(--danger);
+}
+
+/* Override specific styling from original App.css */
+.logo, .card, .read-the-docs {
+  display: none;
+}
+
+:root {
+  --color-bg-primary: #f8f9fa;
+  --color-bg-secondary: #edf2f7;
+  --color-card-bg: #ffffff;
+  --color-text-primary: #2d3748;
+  --color-text-secondary: #718096;
+  --color-accent-primary: #ff6b9d;
+  --color-accent-secondary: #ff4184;
+}
